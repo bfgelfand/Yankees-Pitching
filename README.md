@@ -12,7 +12,7 @@ PIT
 TB
 TEX
 - Throughout an at-bat, the Yankees' pitchers seemed to most frequently throw 4-seam fastballs. 
-- Relief pitchers threw mostly off-speed pitches, with the top two being sinkers and changeups. Starting pitchers threw 4-seam fastballs most frequently.
+- Relief pitchers threw mostly off-speed pitches in the final pitch of at-bats, with the top two being sinkers and changeups. Starting pitchers threw 4-seam fastballs most frequently as the last pitch in at-bats.
 - Home runs were most likely to come off of 4-seam fastballs.
 - Both starting pitchers and relief pitchers threw home runs more often during early counts/early in an at-bat. 
 
