@@ -141,10 +141,10 @@ WHERE
 SELECT *
 FROM (
 	SELECT 
-		a.POS, 
-		a.pitch_name,
-		a.timesthrown,
-		RANK() OVER (PARTITION BY a.POS ORDER BY a.timesthrown DESC) PitchRank
+		unranked.POS, 
+		unranked.pitch_name,
+		unranked.timesthrown,
+		RANK() OVER (PARTITION BY unranked.POS ORDER BY unranked.timesthrown DESC) PitchRank
 	FROM (
 		SELECT 
 			YPS.POS, 
@@ -160,9 +160,9 @@ FROM (
 		GROUP BY 
 			YPS.POS, 
 			LPY.pitch_name
-	) a
-)b
-WHERE b.PitchRank < 6
+	) unranked
+) ranked
+WHERE ranked.PitchRank < 6
 
 --Question 3 Homerun analysis
 
